@@ -7,7 +7,7 @@ void ShellInsert(int a[],int dk){
 	for(i = dk;i<19;i++){
 		if(a[i]  < a[i-dk]){
 			int temp = a[i];
-			for(j =i-dk;j>=0 && temp < a[j];j = j-dk){
+			for(j = i-dk;j>=0 && temp < a[j];j = j-dk){
 				a[j+dk] = a[j];
 			}
 			a[j+dk] = temp;
@@ -15,7 +15,7 @@ void ShellInsert(int a[],int dk){
 	}
 } ;
 void Vprint(int a[]){
-	for(int m =0;m<10;m++){
+	for(int m =0;m<19;m++){
 		printf("%d ",a[m]);
 	}	
 }
